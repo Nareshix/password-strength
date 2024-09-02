@@ -6,7 +6,18 @@
 }
 
 .display{
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    height: 150px;
+    height: 50%;
     border-radius: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.input{
+    align-self: center;
+    padding: 2.5%;
+    margin-top: 2.5%;
+}
+
