@@ -56,3 +56,8 @@ span{
     color: rgb(2, 15, 102);
     font-size: larger;
 }
+
+.display-strength,
+.cracking-time{
+    font-size: medium;
+}
