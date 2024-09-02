@@ -71,3 +71,26 @@ span{
     justify-content: center;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px){    
+    
+    /* made font size smaller */
+    span{
+        color: rgb(2, 15, 102);
+        font-size: smaller;
+    }
+    /* made font size smaller */
+    
+    .display-strength,
+    .cracking-time{
+    font-size: small;
+    }
+
+
+    /* remove padding, give more breathing space */
+    .password-strength{
+        font-size: larger;
+        margin-left: 0%;
+    }
+    
+}
