@@ -37,11 +37,12 @@ body {
 
 .password-strength{
     font-size: larger;
+    margin-left: 10%;
 }
 
 .estimated-time-tocrack{
     font-size: larger;
-    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .title,
