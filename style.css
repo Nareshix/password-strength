@@ -63,7 +63,7 @@ span{
 
 .display-strength,
 .cracking-time{
-    font-size: medium;
+    font-size: larger;
 }
 
 .ol{
@@ -90,11 +90,11 @@ span{
 
     /* remove padding, give more breathing space */
     .password-strength{
-        font-size: larger;
+        font-size: medium;
         margin-left: 0%;
     }
     .estimated-time-tocrack{
-        font-size: larger;
+        font-size: medium;
         margin-right: 0%;
     }
     
