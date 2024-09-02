@@ -18,22 +18,29 @@ input.addEventListener('keyup', () => {
         displayStrength.textContent = 'Very Weak';
         displayStrength.style.color = 'red'
         crackingTime.style.color = 'red';
+        input.style.color = 'red'
     }
     else if (result.guesses_log10 < 11){
         displayStrength.textContent = 'Weak';
+        
+        //yellow
         displayStrength.style.color = 'rgb(255, 191, 0)'
         crackingTime.style.color = 'rgb(255, 191, 0)'
+        input.style.color = 'rgb(255, 191, 0)'
 
     }    
     else if (result.guesses_log10 < 11.6){
         displayStrength.textContent = 'Strong';
-        displayStrength.style.color = 'green'
-        crackingTime.style.color = 'green'
+        displayStrength.style.color = 'blue'
+        crackingTime.style.color = 'blue'
+        input.style.color = 'blue'
 
     }
     else{
         displayStrength.textContent = 'Very Strong';
-        displayStrength.style.color = 'blue'
-        crackingTime.style.color = 'blue'
+        displayStrength.style.color = 'green'
+        crackingTime.style.color = 'green'
+        input.style.color = 'green'
+
     }
 })
