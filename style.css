@@ -63,3 +63,10 @@ span{
 .cracking-time{
     font-size: medium;
 }
+
+.ol{
+    margin-top: 1.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
