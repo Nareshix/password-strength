@@ -1,5 +1,6 @@
-let input = document.querySelector('input');
-
+const input = document.querySelector('input');
+const crackingTime = document.querySelector('.cracking-time')
+const displayStrength = document.querySelector('.display-strength')
 
 let password = '';
 input.addEventListener('keyup', () => {
