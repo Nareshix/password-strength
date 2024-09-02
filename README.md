@@ -1,7 +1,7 @@
 # Password Strength Testing Tool
 
 
-Used [zxcvbn]( https://github.com/dropbox/zxcvbn?tab=readme-ov-file ) technology to generate the strength of the password.
+Used [zxcvbn]( https://github.com/dropbox/zxcvbn?tab=readme-ov-file ) technology to generate the strength of the password. Inpsiration to make this simple project was from [Bitwarden](https://bitwarden.com/password-strength/)
 
 
 # Usage
