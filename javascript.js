@@ -9,20 +9,21 @@ input.addEventListener('keyup', () => {
     
     // chose offline_fast_hashing_1e10_per_second to expect worst case scenario
     crackingTime.textContent = result.crack_times_display.offline_slow_hashing_1e4_per_second;    
-    switch (result.score) {
-        case 0:
-            displayStrength.textContent = 'Very Weak'
-            break;
-        case 1:
-            displayStrength.textContent = 'Weak'
-            break;
-        case 3:
-            displayStrength.textContent = 'Strong'
-            break;
-        case 4:
-            displayStrength.textContent = 'Very Strong'
-            break;
-        }
-    
-     
+
+
+    /* result.score is good for slow hash scenario but 
+     since im using fast hash scenario, ive decided to test 
+     out the guess_log10 and thus gave the necessary outputs */
+    if (result.guesses_log10 < 10 ){
+        displayStrength.textContent = 'Very Weak';
+    }
+    else if (result.guesses_log10 < 11){
+        displayStrength.textContent = 'Weak';
+    }    
+    else if (result.guesses_log10 < 11.6){
+        displayStrength.textContent = 'Strong';
+    }
+    else{
+        displayStrength.textContent = 'Very Strong';
+    }
 })
