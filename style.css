@@ -37,3 +37,9 @@
     font-size: larger;
     margin-left: 10%;
 }
+
+.title,
+.sub-title{
+    text-align: center;
+    color: white;
+}
