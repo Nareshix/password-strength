@@ -16,14 +16,24 @@ input.addEventListener('keyup', () => {
      the password strength display */
     if (result.guesses_log10 < 10 ){
         displayStrength.textContent = 'Very Weak';
+        displayStrength.style.color = 'red'
+        crackingTime.style.color = 'red';
     }
     else if (result.guesses_log10 < 11){
         displayStrength.textContent = 'Weak';
+        displayStrength.style.color = 'rgb(255, 191, 0)'
+        crackingTime.style.color = 'rgb(255, 191, 0)'
+
     }    
     else if (result.guesses_log10 < 11.6){
         displayStrength.textContent = 'Strong';
+        displayStrength.style.color = 'green'
+        crackingTime.style.color = 'green'
+
     }
     else{
         displayStrength.textContent = 'Very Strong';
+        displayStrength.style.color = 'blue'
+        crackingTime.style.color = 'blue'
     }
 })
