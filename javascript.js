@@ -31,16 +31,16 @@ input.addEventListener('keyup', () => {
     }    
     else if (result.guesses_log10 < 11.6){
         displayStrength.textContent = 'Strong';
-        displayStrength.style.color = 'blue'
-        crackingTime.style.color = 'blue'
-        input.style.color = 'blue'
+        displayStrength.style.color = 'green'
+        crackingTime.style.color = 'green'
+        input.style.color = 'green'
 
     }
     else{
         displayStrength.textContent = 'Very Strong';
-        displayStrength.style.color = 'green'
-        crackingTime.style.color = 'green'
-        input.style.color = 'green'
+        displayStrength.style.color = 'blue'
+        crackingTime.style.color = 'blue'
+        input.style.color = 'blue'
 
     }
 })
