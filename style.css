@@ -28,8 +28,6 @@ body {
 .text-info{
     display: flex;
     justify-content: space-around;
-    margin-right: 20%;
-    margin-top: 2.5%;
 }
 
 .password-strength{
