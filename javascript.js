@@ -1,8 +1,9 @@
 let input = document.querySelector('input');
 
 
-let password;
+let password = '';
 input.addEventListener('keyup', () => {
     password = input.value;
 })
 
+let result = zxcvbn(password)
