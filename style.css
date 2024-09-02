@@ -26,11 +26,10 @@ body {
 }
 
 .text-info{
-    flex-basis: 100%;
     display: flex;
     justify-content: space-around;
     margin-right: 20%;
-    margin-top: 2%;
+    margin-top: 2.5%;
 }
 
 .password-strength{
