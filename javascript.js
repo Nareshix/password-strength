@@ -12,8 +12,8 @@ input.addEventListener('keyup', () => {
 
 
     /* result.score is good for slow hash scenario but 
-     since im using fast hash scenario, ive decided to test 
-     out the guess_log10 and thus gave the necessary outputs */
+     since im using fast hash scenario, I will customise
+     the password strength display */
     if (result.guesses_log10 < 10 ){
         displayStrength.textContent = 'Very Weak';
     }
