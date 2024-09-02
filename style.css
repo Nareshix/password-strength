@@ -21,3 +21,20 @@
     margin-top: 2.5%;
 }
 
+.text-info{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 20%;
+    margin-top: 2%;
+}
+
+.password-strength{
+    font-size: larger;
+    /* margin-right: 45%; */
+}
+
+.estimated-time-tocrack{
+    font-size: larger;
+    margin-left: 10%;
+}
