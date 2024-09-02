@@ -1,0 +1,12 @@
+.container {
+    border: solid #3882f6;
+    background-color: #3882f6;
+    border-radius: 10px;
+    height: 300px;
+}
+
+.display{
+    background-color: white;
+    height: 150px;
+    border-radius: 10px;
+}
