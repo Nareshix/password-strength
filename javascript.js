@@ -8,7 +8,7 @@ input.addEventListener('keyup', () => {
     let result = zxcvbn(password, user_inputs=[])
     
     // chose offline_fast_hashing_1e10_per_second to expect worst case scenario
-    crackingTime.textContent = result.crack_times_display.offline_slow_hashing_1e4_per_second;    
+    crackingTime.textContent = result.crack_times_display.offline_fast_hashing_1e10_per_second;    
 
 
     /* result.score is good for slow hash scenario but 
