@@ -56,8 +56,9 @@ let displayContents = () => {
 generatePasswordButton.addEventListener('click', () => {
     input.value = generatePassword();
     input.focus();
+    displayContents()
 })
 
 input.addEventListener('keyup', () => {
-
+    displayContents()
 })
