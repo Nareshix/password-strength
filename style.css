@@ -43,6 +43,12 @@ button{
     background-color: rgb(13, 43, 240);
     border: rgb(13, 43, 240);
     color: white;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.95);
 }
 
 .input{
