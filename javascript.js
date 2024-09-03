@@ -1,6 +1,7 @@
 const input = document.querySelector('input');
 const crackingTime = document.querySelector('.cracking-time')
 const displayStrength = document.querySelector('.display-strength')
+const generatePasswordButton = document.querySelector('.generate-password')
 
 
 let generatePassword = (
@@ -11,13 +12,18 @@ let generatePassword = (
       .map((x) => characters[x % characters.length])
       .join('')
 
-    
+
+generatePasswordButton.addEventListener('click', () => {
+    input.value = generatePassword();
+    input.focus();
+})
+
 let password = '';
 input.addEventListener('keyup', () => {
     password = input.value;
     let result = zxcvbn(password, user_inputs=[])
     
-    // chose offline_fast_hashing_1e10_per_second to expect worst case scenario
+    // Displays time taken to crack password
     crackingTime.textContent = result.crack_times_display.offline_fast_hashing_1e10_per_second;    
 
 
