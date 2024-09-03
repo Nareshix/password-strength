@@ -15,15 +15,13 @@ input.addEventListener('keyup', () => {
      since im using fast hash scenario, I will customise
      the password strength display */
     if (result.guesses_log10 < 16.6 ){
-        displayStrength.textContent = result.guesses_log10
-        // displayStrength.textContent = 'Very Weak';
+        displayStrength.textContent = 'Very Weak';
         displayStrength.style.color = 'red'
         crackingTime.style.color = 'red';
         input.style.color = 'red'
     }
     else if (result.guesses_log10 < 17.1){
-        displayStrength.textContent = result.guesses_log10
-        // displayStrength.textContent = 'Weak';
+        displayStrength.textContent = 'Weak';
         
         //yellow
         displayStrength.style.color = 'rgb(255, 191, 0)'
@@ -32,16 +30,14 @@ input.addEventListener('keyup', () => {
 
     }    
     else if (result.guesses_log10 < 17.7){
-        displayStrength.textContent = result.guesses_log10
-        // displayStrength.textContent = 'Strong';
+        displayStrength.textContent = 'Strong';
         displayStrength.style.color = 'green'
         crackingTime.style.color = 'green'
         input.style.color = 'green'
 
     }
     else{
-        displayStrength.textContent = result.guesses_log10
-        // displayStrength.textContent = 'Very Strong';
+        displayStrength.textContent = 'Very Strong';
         displayStrength.style.color = 'blue'
         crackingTime.style.color = 'blue'
         input.style.color = 'blue'
