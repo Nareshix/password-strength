@@ -18,9 +18,8 @@ generatePasswordButton.addEventListener('click', () => {
     input.focus();
 })
 
-let password = '';
 input.addEventListener('keyup', () => {
-    password = input.value;
+    let password = input.value;
     let result = zxcvbn(password, user_inputs=[])
     
     // Displays time taken to crack password
