@@ -14,7 +14,7 @@ let generatePassword = (
 
 let displayContents = () => {
     let password = input.value;
-    let result = zxcvbn(password, user_inputs=[])
+    let result = zxcvbn(password)
     
     // Displays time taken to crack password
     crackingTime.textContent = result.crack_times_display.offline_fast_hashing_1e10_per_second;    
