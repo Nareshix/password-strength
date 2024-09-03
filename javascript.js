@@ -18,7 +18,8 @@ generatePasswordButton.addEventListener('click', () => {
     input.focus();
 })
 
-input.addEventListener('keyup', () => {
+
+let displayContents = () => {
     let password = input.value;
     let result = zxcvbn(password, user_inputs=[])
     
@@ -56,6 +57,8 @@ input.addEventListener('keyup', () => {
         displayStrength.style.color = 'blue'
         crackingTime.style.color = 'blue'
         input.style.color = 'blue'
-
     }
+}
+
+input.addEventListener('keyup', () => {
 })
