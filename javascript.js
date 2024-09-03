@@ -2,6 +2,16 @@ const input = document.querySelector('input');
 const crackingTime = document.querySelector('.cracking-time')
 const displayStrength = document.querySelector('.display-strength')
 
+
+let generatePassword = (
+    length = 20,
+    characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+  ) =>
+    Array.from(crypto.getRandomValues(new Uint32Array(length)))
+      .map((x) => characters[x % characters.length])
+      .join('')
+
+    
 let password = '';
 input.addEventListener('keyup', () => {
     password = input.value;
