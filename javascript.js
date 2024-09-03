@@ -12,13 +12,6 @@ let generatePassword = (
       .map((x) => characters[x % characters.length])
       .join('')
 
-
-generatePasswordButton.addEventListener('click', () => {
-    input.value = generatePassword();
-    input.focus();
-})
-
-
 let displayContents = () => {
     let password = input.value;
     let result = zxcvbn(password, user_inputs=[])
@@ -60,5 +53,11 @@ let displayContents = () => {
     }
 }
 
+generatePasswordButton.addEventListener('click', () => {
+    input.value = generatePassword();
+    input.focus();
+})
+
 input.addEventListener('keyup', () => {
+
 })
