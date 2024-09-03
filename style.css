@@ -2,6 +2,8 @@ body {
     background-color: rgb(149, 162, 228);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 .container {
     border: solid #3882f6;
     background-color: #3882f6;
@@ -11,6 +13,14 @@ body {
     margin-right: 15%;
 }
 
+
+.title,
+.sub-title{
+    text-align: center;
+    color: white;
+}
+
+
 .display{
     display: flex;
     flex-direction: column;
@@ -18,6 +28,21 @@ body {
     border-radius: 10px;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.generate-password{
+    display: flex;
+    justify-content: end;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+button{
+    padding: 1.5%;
+    border-radius: 5px;
+    background-color: rgb(13, 43, 240);
+    border: rgb(13, 43, 240);
+    color: white;
 }
 
 .input{
@@ -44,15 +69,10 @@ body {
     margin-right: 10%;
 }
 
-.title,
-.sub-title{
-    text-align: center;
-    color: white;
-    
-}
 
 
-
+/*Your Password Strenght: 
+ Estimated Time to Crack: */
 span{
     color: rgb(2, 15, 102);
     font-size: larger;
@@ -69,12 +89,23 @@ span{
     justify-content: center;
     align-items: center;
 }
+.note{
+    color: rgb(235, 217, 217);
+    font-weight: 500;
+    text-align: center;
+} 
+
+.inspiration{
+    text-align: center;
+}
+
+
 
 @media only screen and (max-width:900px){    
     
     /* made font size smaller */
     span{
-        font-size: smaller;
+        font-size: small;
     }
     /* made font size smaller */
     
@@ -86,38 +117,12 @@ span{
 
     /* remove padding, give more breathing space */
     .password-strength{
-        font-size: medium;
+        font-size: smaller;
         margin-left: 0%;
     }
     .estimated-time-tocrack{
-        font-size: medium;
+        font-size: smaller;
         margin-right: 0%;
     }
 }
     
-
-.note{
-    color: rgb(235, 217, 217);
-    font-weight: 500;
-    text-align: center;
-} 
-
-.inspiration{
-    text-align: center;
-}
-
-.generate-password{
-    display: flex;
-    justify-content: end;
-    margin-top: 5%;
-    margin-right: 5%;
-}
-
-
-button{
-    padding: 1.5%;
-    border-radius: 5px;
-    background-color: rgb(13, 43, 240);
-    border: rgb(13, 43, 240);
-    color: white;
-}
