@@ -12,6 +12,16 @@ let generatePassword = (
       .map((x) => characters[x % characters.length])
       .join('')
 
+let generateVeryStrongPassword = () => {
+    let password;
+    do{
+        password = generatePassword();
+        result = zxcvbn(password).crack_times_display.offline_fast_hashing_1e10_per_second;
+    }while (result !== 'centuries')
+    return password;
+}
+
+
 let displayContents = () => {
     let password = input.value;
     let result = zxcvbn(password)
@@ -31,7 +41,7 @@ let displayContents = () => {
     }
     else if (result.guesses_log10 < 17.1){
         displayStrength.textContent = 'Weak';
-        
+
         //yellow
         displayStrength.style.color = 'rgb(255, 191, 0)'
         crackingTime.style.color = 'rgb(255, 191, 0)'
@@ -54,7 +64,7 @@ let displayContents = () => {
 }
 
 generatePasswordButton.addEventListener('click', () => {
-    input.value = generatePassword();
+    input.value = generateVeryStrongPassword();
     input.focus();
     displayContents()
 })
