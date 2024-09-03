@@ -40,16 +40,16 @@ let displayContents = () => {
     }    
     else if (result.guesses_log10 < 17.7){
         displayStrength.textContent = 'Strong';
-        displayStrength.style.color = 'green'
-        crackingTime.style.color = 'green'
-        input.style.color = 'green'
+        displayStrength.style.color = 'blue'
+        crackingTime.style.color = 'blue'
+        input.style.color = 'blue'
 
     }
     else{
         displayStrength.textContent = 'Very Strong';
-        displayStrength.style.color = 'blue'
-        crackingTime.style.color = 'blue'
-        input.style.color = 'blue'
+        displayStrength.style.color = 'green'
+        crackingTime.style.color = 'green'
+        input.style.color = 'green'
     }
 }
 
